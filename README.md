@@ -7,10 +7,10 @@
         <li>My own work</li>
         <li>Bootcamp notes for specific personal reminders
             <ol >
-                <img src="./img/WebDev2023-1.jpg" alt="WebDev2023-1" style="height: 250;width: 180;">
-                <img src="./img/WebDev2023-2.jpg" alt="WebDev2023-2" style="height: 250;width: 180;">
-                <img src="./img/WebDev2023-3.jpg" alt="WebDev2023-3" style="height: 250;width: 180;">
-                <img src="./img/WebDev2023-4.jpg" alt="WebDev2023-4" style="height: 250;width: 180;">
+                <img src="./img/WebDev2023-1.jpg" alt="WebDev2023-1">
+                <img src="./img/WebDev2023-2.jpg" alt="WebDev2023-2">
+                <img src="./img/WebDev2023-3.jpg" alt="WebDev2023-3">
+                <img src="./img/WebDev2023-4.jpg" alt="WebDev2023-4">
             </ol>
         </li>
     </ul>
