@@ -1,0 +1,15 @@
+p{
+    color: red;
+}
+
+.first-class{
+    color: blue;
+}
+
+p[draggable]{
+    color: violet;
+}
+
+#first-id{
+    color: green;
+}
