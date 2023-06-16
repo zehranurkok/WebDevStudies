@@ -1,0 +1,66 @@
+.flag{
+    background-color: #E30A17;
+    width: 900px;
+    height: 600px;
+}
+
+.flag-items{
+    position: relative;
+    left: 150px;
+    top: 150px;
+}
+
+.moon #whiteside{
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.moon #redside{
+    background-color: #E30A17;
+    width: 250px;
+    height: 260px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 65px;
+}
+    /* z-index: 1; */ 
+.star{
+    position: absolute;
+    top: 90px;
+    left: 300px;
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 43.5px solid rgb(255, 255, 255);
+    transform: rotate(-0.06turn);
+}
+
+#piece1{
+    width: 0; 
+    height: 0; 
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid rgb(255, 254, 254);
+    position: relative;
+    top: 29px;
+    left: -48px;
+    transform: rotate(0.094turn);
+
+}
+
+#piece2{
+    width: 0; 
+    height: 0; 
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 33.5px solid rgb(255, 255, 255);
+    top: 29px;
+    left: -52px;
+    transform: rotate(0.896turn);
+    position: absolute;
+}
