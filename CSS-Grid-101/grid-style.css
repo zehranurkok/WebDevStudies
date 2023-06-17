@@ -1,3 +1,7 @@
+body{
+    background-color: aquamarine;
+}
+
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
