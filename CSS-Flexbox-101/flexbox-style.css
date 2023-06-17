@@ -1,0 +1,21 @@
+.flex-container{
+    display: flex;
+}
+
+.card{
+    background-color: rgb(192, 18, 18);
+    border: 5px solid white;
+    width: 30px;
+    height: 100px;
+    flex: 1;
+    border-radius: 5%;
+}
+
+.first{
+    flex:2;
+}
+
+.second{
+    flex:0.5;
+}
+
