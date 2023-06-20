@@ -11,6 +11,10 @@
                 <img src="./img/WebDev2023-2.jpg" alt="WebDev2023-2">
                 <img src="./img/WebDev2023-3.jpg" alt="WebDev2023-3">
                 <img src="./img/WebDev2023-4.jpg" alt="WebDev2023-4">
+                <img src="./img/WebDev2023-5.jpg" alt="WebDev2023-5">
+                <img src="./img/WebDev2023-6.jpg" alt="WebDev2023-6">
+                <img src="./img/WebDev2023-7.jpg" alt="WebDev2023-7">
+                <img src="./img/WebDev2023-8.jpg" alt="WebDev2023-8">
             </ol>
         </li>
     </ul>
