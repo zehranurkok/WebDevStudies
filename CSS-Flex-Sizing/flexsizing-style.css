@@ -1,0 +1,106 @@
+.container > div{
+    display: flex;
+    gap: 10px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.container p{
+    border: 2px solid rgb(2, 156, 138);
+}
+
+.item2 > div{
+    width: 100px;
+}
+
+/*When the following commands are together*/
+.item3 > div{
+    width: 100px; /*this line will not be valid*/
+    flex-basis: 200px; /*this line will be valid*/
+}
+
+.item4 > div{
+    flex-basis: 200px; /*this line will not be valid*/
+    max-width: 100px; /*this line will be valid*/
+}
+
+.item5 > div{
+    flex-basis: 200px; /*this line will not be valid*/
+    min-width: 300px; /*this line will be valid*/
+}
+
+/*this doesnt look like a flexbox anymore*/
+.item6 > div{
+    flex-basis: 100px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+/*flex grow is on, but flex shrink is off, then what's going to happen is each of these items will first start out at 100 pixels. 
+Remember, the flex basis is the initial starting value. 
+It tries to be 100 pixels wide, but then because it's allowed to grow and there is plenty of space to grow there's way more than 400 pixels to fit our four items.
+Then it's going to increase the width of each of these items until the entire width of the container is filled up by each of our items.
+So when we adjust the width of our container, this is where you can see that when the width is reduced,
+it gets reduced to that flex shrink amount, which is 100 pixels, but it doesn't go any further than that.*/
+.item7 > div{
+    flex-basis: 100px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+/*it's default setting of flexbox item*/
+.item8 > div{
+    flex-basis: 100px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+/*When the following commands are together*/
+.item9 > div{
+    flex-basis: 100px; /*this line will not be valid*/
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+/*flex-basis auto*/
+.item10 > div{
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+/*flex-basis equal*/
+.item11 > div{
+    flex-basis: 0; /*equal*/
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+/*shorthand way --> flex: grow shrink basis*/
+.item12 > div{
+    flex: 1 1 0; 
+}
+
+/*shortshorthand*/
+.item13 > div{
+    flex: 1; /*it means flex: 1 1 0;*/
+}
+
+.flex-container{
+    display: flex;
+    gap: 10px;
+}
+
+div .red-item{
+    background-color: red;
+    flex: 1;
+}
+
+div .blue-item{
+    background-color: blue; 
+    flex: 2;
+}
+
+div .green-item{
+    background-color: green;
+    flex: 3;
+}
