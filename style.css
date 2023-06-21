@@ -9,6 +9,6 @@ span#content-name{
     color: #FF0060;
 }
 
-li.list-item{
+ul{
     list-style: none;
 }
