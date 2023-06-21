@@ -1,0 +1,27 @@
+.grid-container1{
+    display: grid;
+    grid-template:auto / 400px auto;
+    gap: 20px;
+    margin: 20px;
+    /*
+    same as above and below
+    grid-template-rows: auto;
+    grid-template-columns: 200px auto;
+    */
+}
+
+.grid-container2{
+    display: grid;
+    grid-template-columns: 400px auto;
+    grid-template-rows: 350px 350px;
+    grid-auto-rows: 200px; 
+    gap: 20px;
+    margin: 20px;
+}
+
+p{
+    background-color: gray;
+    border: 8px solid rgb(47, 133, 104);
+    border-radius: 2%;
+    padding: 10px;
+}

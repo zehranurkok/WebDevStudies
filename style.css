@@ -8,3 +8,7 @@
 span#content-name{
     color: #FF0060;
 }
+
+.list-item{
+    list-style: none;
+}
