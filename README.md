@@ -19,6 +19,8 @@
                 <img src="./img/WebDev2023-10.jpg" alt="WebDev2023-10" width="600" height="700">
                 <img src="./img/WebDev2023-11.jpg" alt="WebDev2023-11" width="600" height="700">
                 <img src="./img/WebDev2023-12.jpg" alt="WebDev2023-12" width="600" height="700">
+                <img src="./img/WebDev2023-13.jpg" alt="WebDev2023-13" width="600" height="700">
+                <img src="./img/WebDev2023-14.jpg" alt="WebDev2023-14" width="600" height="700">
             </ol>
         </li>
     </ul>
