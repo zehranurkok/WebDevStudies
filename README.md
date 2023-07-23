@@ -1,5 +1,4 @@
 # WebDevStudies
-<h2>Hello!</h2>
 <div>
     <p>This repository contains</p>
     <ul>
