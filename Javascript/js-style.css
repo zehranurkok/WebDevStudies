@@ -1,0 +1,15 @@
+*{
+    background-color: black;
+    color: white;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+span#content-name{
+    color: #1114b0;
+    font-family: sans-serif;
+}
+
+ul{
+    list-style: none;
+}
