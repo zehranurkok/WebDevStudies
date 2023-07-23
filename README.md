@@ -1,25 +1,4 @@
 # WebDevStudies
 <div>
-    <p>This repository contains</p>
-    <ul>
-        <li>What I learned from Dr. Angela Yu's <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp">The Complete 2023 Web Development Bootcamp</a></li>
-        <li>My own works and notes</li>
-            <ol >
-                <img src="./img/WebDev2023-1.jpg" alt="WebDev2023-1" width="600" height="700">
-                <img src="./img/WebDev2023-2.jpg" alt="WebDev2023-2" width="600" height="700">
-                <img src="./img/WebDev2023-3.jpg" alt="WebDev2023-3" width="600" height="700"> 
-                <img src="./img/WebDev2023-4.jpg" alt="WebDev2023-4" width="600" height="700">
-                <img src="./img/WebDev2023-5.jpg" alt="WebDev2023-5" width="600" height="700">
-                <img src="./img/WebDev2023-6.jpg" alt="WebDev2023-6" width="600" height="700">
-                <img src="./img/WebDev2023-7.jpg" alt="WebDev2023-7" width="600" height="700">
-                <img src="./img/WebDev2023-8.jpg" alt="WebDev2023-8" width="600" height="700">
-                <img src="./img/WebDev2023-9.jpg" alt="WebDev2023-9" width="600" height="700">
-                <img src="./img/WebDev2023-10.jpg" alt="WebDev2023-10" width="600" height="700">
-                <img src="./img/WebDev2023-11.jpg" alt="WebDev2023-11" width="600" height="700">
-                <img src="./img/WebDev2023-12.jpg" alt="WebDev2023-12" width="600" height="700">
-                <img src="./img/WebDev2023-13.jpg" alt="WebDev2023-13" width="600" height="700">
-                <img src="./img/WebDev2023-14.jpg" alt="WebDev2023-14" width="600" height="700">
-            </ol>
-        </li>
-    </ul>
+    <p>This repository contains my own work during Angela Yu's <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp">The Complete 2023 Web Development Bootcamp</a>.</p>
 </div>
