@@ -1,6 +1,5 @@
 function createNumber() {
     var x = Math.random();
-    x = x * 100;
-    var result = Math.round(x);
+    var result = Math.round(x * 100);
     document.write(result);
 }

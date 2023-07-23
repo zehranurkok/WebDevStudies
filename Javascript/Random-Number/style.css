@@ -1,0 +1,9 @@
+#button {
+    background-color: blueviolet;
+    text-decoration:solid;
+    cursor:pointer;
+    border: 2px solid rgb(118, 39, 192);
+    border-radius: 12px;
+    padding: 10px;
+    margin: 5px;
+}
