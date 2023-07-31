@@ -60,12 +60,11 @@ function checkAnswer(currentLevel) {
     else{
         playSound("wrong");
         level = 1;
-        $("h1").text("Game Over! Let's Play Again!");
+        $("h1").text("Game Over! Play Again!");
         $(document).one("keypress", function(){
             gamePattern = [];
             nextSequence();
         });
-        document.addEventListener("touchstart",nextSequence);
     }
 }
 document.addEventListener("touchstart",nextSequence);
