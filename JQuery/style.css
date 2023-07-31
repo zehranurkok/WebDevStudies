@@ -25,8 +25,9 @@ body {
 .game {
     position: absolute;
     color: rgb(255, 255, 255);
-    left: 42%;
-    top: 42%;
+    left: 37%;
+    top: 38%;
+    font-size: 40px;
     pointer-events: none;
 }
 
@@ -90,5 +91,10 @@ body {
     }
     .pressed {
         box-shadow: inset 0px 0px 20px 8px rgba(55, 53, 53, 0.5);
+    }
+    .game {
+        left: 37%;
+        top: 38%;
+        font-size: 30px;
     }
 }
