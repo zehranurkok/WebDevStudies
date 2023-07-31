@@ -63,6 +63,7 @@ function checkAnswer(currentLevel) {
         level = 0;
         $("h1").text("Game Over! Play Again!");
         $(document).one("keypress", function(){
+            level = 0;
             gamePattern = [];
             nextSequence();
         });
