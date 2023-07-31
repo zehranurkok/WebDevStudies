@@ -7,7 +7,7 @@ let userClickedPattern = [];
 let level = 0;
 
 
-$(document).one("keypress", function(){
+$(document).one("keypress" || document.addEventListener("touchstart",nextSequence), function(){
     nextSequence();
 });
 
@@ -69,4 +69,4 @@ function checkAnswer(currentLevel) {
         });
     }
 }
-document.addEventListener("touchstart",nextSequence);
+//document.addEventListener("touchstart",nextSequence);
