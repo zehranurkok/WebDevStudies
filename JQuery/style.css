@@ -69,3 +69,10 @@ body {
 .pressed {
     box-shadow: inset 0px 0px 30px 10px rgba(55, 53, 53, 0.5);
 }
+
+@media (max-width:480px) {
+    .container {
+        height: 400px;
+        width: 400px;
+    }
+}
