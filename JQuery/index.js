@@ -6,8 +6,8 @@ let userClickedPattern = [];
 
 let level = 1;
 
+
 $(document).one("keypress", function(){
-    addEventListener("touchstart", handleStart);
     nextSequence();
 });
 
@@ -60,11 +60,11 @@ function checkAnswer(currentLevel) {
     else{
         playSound("wrong");
         level = 1;
-        $("h1").text("Game Over! Let's Press A Key or Touch Screen And Start The Game.");
+        $("h1").text("Game Over! Let's Press A Key And Start The Game.");
         $(document).one("keypress", function(){
             gamePattern = [];
-            addEventListener("touchstart", handleStart);
             nextSequence();
         });
     }
 }
+document.getElementById("touch").addEventListener("touchstart",nextSequence);
