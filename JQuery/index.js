@@ -11,9 +11,11 @@ $(document).one("keypress", function(){
     nextSequence();
 });
 $("touch").one("touchstart", function(){
-    $(".container").one("touchcancel");
-    nextSequence();
+    $(".container").addEventListener("touchcancel",function(){
+        nextSequence();
+    });
 });
+
 
 $(".item").click(function () {
     var userColour  = $(this).attr("class");
