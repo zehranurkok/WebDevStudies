@@ -27,7 +27,7 @@ body {
     color: rgb(255, 255, 255);
     left: 42%;
     top: 42%;
-    cursor: none;
+    pointer-events: none;
 }
 
 #touch{
