@@ -28,6 +28,10 @@ body {
     top: 42%;
 }
 
+#touch{
+    display: none;
+}
+
 .item {
     border: 6px solid rgb(255, 255, 255);
     cursor: pointer;
@@ -74,5 +78,12 @@ body {
     .container {
         height: 400px;
         width: 400px;
+    }
+
+    #title {
+        display: none;
+    }
+    #touch{
+        display: block;
     }
 }
