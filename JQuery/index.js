@@ -11,7 +11,7 @@ $(document).one("keypress", function(){
     nextSequence();    
 
 });
-$("#touch").one("touchstart", function(){
+$(document).one("touchstart", function(){
     nextSequence();
 });
 
