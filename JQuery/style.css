@@ -34,6 +34,7 @@ body {
 
 #touch{
     display: none;
+    cursor: pointer;
 }
 
 .item {
@@ -64,6 +65,10 @@ body {
     margin-top: 10px;
     margin-right: 10px;
     border-radius: 0px 500px 0px 600px;   
+}
+
+.title {
+    pointer-events: none;
 }
 
 .green {
