@@ -4,7 +4,7 @@ let gamePattern = [];
 
 let userClickedPattern = [];
 
-let level = 1;
+let level = 0;
 
 
 $(document).one("keypress", function(){
@@ -23,6 +23,7 @@ $(".item").click(function () {
 
 function nextSequence() {
     userClickedPattern = [];
+    level++;
     $("h1").text("Level " + level);
 
     randomNumber = Math.floor(Math.random()*4);
@@ -52,14 +53,14 @@ function animatePress(currentColor) {
 function checkAnswer(currentLevel) {
     if (userClickedPattern[currentLevel] === gamePattern[currentLevel]) {
         if (userClickedPattern.length === gamePattern.length){
-            level++;
+            
             $("h1").text("Level " + level);
             setTimeout(nextSequence,500);
         }
     }
     else{
         playSound("wrong");
-        level = 1;
+        level = 0;
         $("h1").text("Game Over! Play Again!");
         $(document).one("keypress", function(){
             gamePattern = [];
