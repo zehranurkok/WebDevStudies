@@ -59,7 +59,7 @@ function checkAnswer(currentLevel) {
     else{
         playSound("wrong");
         level = 1;
-        $("h1").text("Game Over! Let's Press A Key And Start The Game.");
+        $("h1").text("Game Over! Let's Press A Key or Touch Screen And Start The Game.");
         $(document).one("keypress","ontouchstart", function(){
             gamePattern = [];
             nextSequence();
