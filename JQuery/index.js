@@ -7,7 +7,10 @@ let userClickedPattern = [];
 let level = 0;
 
 
-$(document).one("keypress" || document.addEventListener("touchstart",nextSequence), function(){
+$(document).one("keypress", function(){
+    nextSequence();
+});
+$(document).one("touchstart", function(){
     nextSequence();
 });
 
