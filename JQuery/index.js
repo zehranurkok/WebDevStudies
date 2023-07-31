@@ -10,10 +10,9 @@ let level = 0;
 $(document).one("keypress", function(){
     nextSequence();
 });
-$("div").one("touchcancel", function(){
-    $("touch").one("touchstart", function(){
-        nextSequence();
-    });
+$("touch").one("touchstart", function(){
+    $(".container").one("touchcancel");
+    nextSequence();
 });
 
 $(".item").click(function () {
