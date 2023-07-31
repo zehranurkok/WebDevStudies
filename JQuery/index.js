@@ -8,12 +8,11 @@ let level = 0;
 
 
 $(document).one("keypress", function(){
-    nextSequence();
+    nextSequence();    
+
 });
 $("#touch").one("touchstart", function(){
-    $(".container").on("touchcancel",function(){
-        nextSequence();
-    });
+    nextSequence();
 });
 
 

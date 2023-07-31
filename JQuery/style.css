@@ -34,7 +34,6 @@ body {
 
 #touch{
     display: none;
-    cursor: pointer;
 }
 
 .item {
@@ -94,6 +93,8 @@ body {
     }
     #touch{
         display: block;
+        pointer-events: none;
+
     }
     .pressed {
         box-shadow: inset 0px 0px 20px 8px rgba(55, 53, 53, 0.5);
