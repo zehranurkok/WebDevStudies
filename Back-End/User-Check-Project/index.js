@@ -18,7 +18,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //     }
 //     else {
 //         res.sendFile(__dirname + "/public/index.html");
-//         // or res.redirect("/"); same thing
 //     }
 // }
 
@@ -57,7 +56,7 @@ app.post("/submit", (req, res) => {
         res.sendFile(__dirname + "/public/result.html");
     } else {
         // res.sendFile(__dirname + "/public/index.html"); or
-        res.redirect("/")
+        res.redirect("/") // same thing
     } 
 })
 
