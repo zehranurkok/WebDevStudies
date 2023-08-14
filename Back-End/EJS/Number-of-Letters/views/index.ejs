@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number of Letters</title>
+</head>
+<body>
+    <% if (locals.numberOfLetters) { %>
+        <h1><%= numberOfLetters %></h1>
+    <% } else { %>
+        <h1>Hello! Type the text and find out the letter count. 👻</h1>
+    <% } %>
+    <form action="/submit" method="POST">
+        <input type="text" name="iname" placeholder="Something">
+        <input type="submit" value="RUN">
+    </form>
+</body>
+</html>
