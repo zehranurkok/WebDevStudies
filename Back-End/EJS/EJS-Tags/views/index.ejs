@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+</head>
+<body>
+    <h1><%= title %></h1>
+    <p>Current minute: <%= minutes %></p>
+    <%  if (minutes % 2 === 0){ %>
+        <p><%- evennumber %></p>
+    <%  }  else { %>
+        <p><%= oddnumber %></p>
+    <%  } %>
+    <%- include("footer.ejs") %>
+</body>
+</html>
