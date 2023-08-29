@@ -1,4 +1,9 @@
 import https from "https";
+import express from "express";
+
+const app = express();
+const port = 3000;
+
 
 app.get("/", (req,res) => {
 
@@ -34,4 +39,8 @@ app.get("/", (req,res) => {
     });
 
     request.end(); 
+})
+
+app.listen(port, () => {
+    console.log(`Server running on port ${port}.`);
 })
