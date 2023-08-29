@@ -5,6 +5,8 @@ import bodyParser from "body-parser";
 const app = express();
 const port = 3000;
 
+app.use(bodyParser.urlencoded({ extended: true }));
+
 app.get("/", async (req, res) => {
     try {
         // All the chunks have been sent over and we can use the data that we've collected.

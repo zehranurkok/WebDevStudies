@@ -5,6 +5,8 @@ import bodyParser from "body-parser";
 const app = express();
 const port = 3000;
 
+app.use(bodyParser.urlencoded({ extended: true }));
+
 // https://axios-http.com/docs/intro
 // https://axios-http.com/docs/api_intro for examples
 
