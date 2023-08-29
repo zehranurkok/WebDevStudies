@@ -15,7 +15,7 @@ app.get("/", async (req, res) => {
         const response = await axios.get("URL", config);
         res.json({data: response.data})
     } catch (error) {
-        res.status(404).send("Failed to fetch pageResult. Try again.");
+        res.status(404).send("Failed. Try again.");
     }
 })
 
