@@ -19,7 +19,7 @@ app.get("/random", (req, res) => {
 app.get("/data/:id", (req, res) => {
     // Access any of the URL or path paramethers.
     const id = parseInt(req.params.id);
-    const foundData = data.find((data) => data.id === id);
+    const foundData = data.find((value) => value.id === id);
     res.json(foundData);
 })
 
