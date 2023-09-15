@@ -46,6 +46,19 @@ app.post("/data", (req, res) => {
     res.json(newData);
 })
 
+// PUT 
+app.put("/data/:id", (req, res) => {
+    const id = parseInt(req.params.id);
+    const replacementData = {
+        id: id,
+        name: req.body.name,
+        dtype: req.body.type,
+    };
+    const searchIndex = data.findIndex((value) => value.id === id);
+    data[searchIndex] = replacementData;
+    res.json(replacementData);
+})
+
 var data = [
     {
         id: 1,
