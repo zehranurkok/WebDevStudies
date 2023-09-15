@@ -4,7 +4,7 @@ import bodyParser from "body-parser";
 const app = express();
 const port = 3000;
 
-const masterKey = "4VGP2DN-6EWM4SJ-N6FGRHV-Z3PR3TT";
+//const masterKey = "4VGP2DN-6EWM4SJ-N6FGRHV-Z3PR3TT";
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -23,6 +23,13 @@ app.get("/data/:id", (req, res) => {
     res.json(foundData);
 })
 
+// GET a data by filtering type
+app.get("/filter", (req, res) => {
+    const type = req.query.type;
+    const filteredTypes = data.filter((value) => value.dtype === type);
+    res.json(filteredTypes);
+})
+
 app.listen(port, () => {
     console.log(`Server running on port ${port}.`);
 })
@@ -30,57 +37,67 @@ app.listen(port, () => {
 var data = [
     {
         id: 1,
-        type: "movie",
+        dtype: "movie",
         name: "The Ninth Gate"
     },
     {
         id: 2,
-        type: "movie",
+        dtype: "movie",
         name: "Eat Pray Love"
     },
     {
         id: 3,
-        type: "movie",
+        dtype: "movie",
         name: "Ready Player One"
     },
     {
         id: 4,
-        type: "movie",
+        dtype: "movie",
         name: "The Silence of the Lambs"
     },
     {
         id: 5,
-        type: "movie",
+        dtype: "movie",
         name: "The Da Vinci Code"
     },
     {
         id: 6,
-        type: "book",
+        dtype: "book",
         name: "Kvaidan: Tuhaf Şeylere Dair Öyküler ve İncelemeler"
     },
     {
         id: 7,
-        type: "book",
+        dtype: "book",
         name: "Öğrenci Kız"
     },
     {
         id: 8,
-        type: "book",
+        dtype: "book",
         name: "Üç Köşeli Dünya"
     },
     {
         id: 9,
-        type: "book",
+        dtype: "book",
         name: "Dünyanın Ötesindeki Orman"
     },
     {
         id: 10,
-        type: "book",
+        dtype: "book",
         name: "Innsmouth'un Üzerindeki Gölge"
     },
     {
         id: 11,
-        type: "book",
+        dtype: "book",
         name: "Dorian Gray'in Portresi"
+    },
+    {
+        id: 12,
+        dtype: "movie",
+        name: "The Manor"
+    },
+    {
+        id: 13,
+        dtype: "drama",
+        name: "Gilmore Girls"
     }
 ];
