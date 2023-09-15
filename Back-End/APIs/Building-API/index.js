@@ -34,6 +34,18 @@ app.listen(port, () => {
     console.log(`Server running on port ${port}.`);
 })
 
+// POST 
+app.post("/data", (req, res) => {
+    const newData = {
+        id: data.length + 1,
+        name: req.body.name,
+        dtype: req.body.type,
+    };
+    data.push(newData);
+    console.log(data.slice(-1));
+    res.json(newData);
+})
+
 var data = [
     {
         id: 1,
