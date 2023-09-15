@@ -34,7 +34,7 @@ app.listen(port, () => {
     console.log(`Server running on port ${port}.`);
 })
 
-// POST 
+// POST Request
 app.post("/data", (req, res) => {
     const newData = {
         id: data.length + 1,
@@ -46,7 +46,7 @@ app.post("/data", (req, res) => {
     res.json(newData);
 })
 
-// PUT 
+// PUT Request
 app.put("/data/:id", (req, res) => {
     const id = parseInt(req.params.id);
     const replacementData = {
@@ -54,8 +54,23 @@ app.put("/data/:id", (req, res) => {
         name: req.body.name,
         dtype: req.body.type,
     };
-    const searchIndex = data.findIndex((value) => value.id === id);
-    data[searchIndex] = replacementData;
+    const Index = data.findIndex((value) => value.id === id);
+    data[Index] = replacementData;
+    console.log(replacementData);
+    res.json(replacementData);
+})
+
+// PATCH Request
+app.patch("/data/:id", (req, res) => {
+    const existingData = data.find((value) => value.id == req.params.id);
+    const replacementData = {
+        id: id,
+        name: req.body.name || existingData.name,
+        dtype: req.body.type || existingData.dtype,
+    };
+    const Index = data.findIndex((value) => value.id == req.params.id);
+    data[Index] = replacementData;
+    console.log(replacementData);
     res.json(replacementData);
 })
 
