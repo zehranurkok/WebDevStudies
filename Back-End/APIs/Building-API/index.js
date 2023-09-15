@@ -81,7 +81,7 @@ app.delete("/data/:id", (req, res) => {
         data.splice(Index, 1);
         res.sendStatus(200);
     } else {
-        res.status(404).json({ error: `Data with id ${req.params.id} not found. There is no data in this area!`})
+        res.status(404).json({ error: `Data with id ${req.params.id} not found. There is no data in this area!`});
     }
 })
 
@@ -92,7 +92,7 @@ app.delete("/all", (req,res) => {
         data = [];
         res.sendStatus(200);
     } else {
-        res.status(404).json({ error: `You are not authorised!`})
+        res.status(404).json({ error: `You are not authorised!`});
     }
 })
 
