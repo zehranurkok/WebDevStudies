@@ -4,7 +4,7 @@ import bodyParser from "body-parser";
 const app = express();
 const port = 3000;
 
-//const masterKey = "4VGP2DN-6EWM4SJ-N6FGRHV-Z3PR3TT";
+const key = "e03f9485-0fce-4068-b581-94e264ebba32";
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -72,6 +72,28 @@ app.patch("/data/:id", (req, res) => {
     data[Index] = replacementData;
     console.log(replacementData);
     res.json(replacementData);
+})
+
+// DELETE 
+app.delete("/data/:id", (req, res) => {
+    const Index = data.findIndex((value) => value.id == req.params.id);
+    if (Index >= 0) {
+        data.splice(Index, 1);
+        res.sendStatus(200);
+    } else {
+        res.status(404).json({ error: `Data with id ${req.params.id} not found. There is no data in this area!`})
+    }
+})
+
+// DELETE All
+app.delete("/all", (req,res) => {
+    const userKey = req.query.key;
+    if (userKey === key) {
+        data = [];
+        res.sendStatus(200);
+    } else {
+        res.status(404).json({ error: `You are not authorised!`})
+    }
 })
 
 var data = [
