@@ -30,10 +30,6 @@ app.get("/filter", (req, res) => {
     res.json(filteredTypes);
 })
 
-app.listen(port, () => {
-    console.log(`Server running on port ${port}.`);
-})
-
 // POST Request
 app.post("/data", (req, res) => {
     const newData = {
@@ -94,6 +90,10 @@ app.delete("/all", (req,res) => {
     } else {
         res.status(404).json({ error: `You are not authorised!`});
     }
+})
+
+app.listen(port, () => {
+    console.log(`Server running on port ${port}.`);
 })
 
 var data = [
