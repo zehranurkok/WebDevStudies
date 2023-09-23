@@ -3,7 +3,11 @@ import mongoose from "mongoose";
 mongoose.connect('mongodb://127.0.0.1:27017/PeopleDB');
 
 const personSchema = new mongoose.Schema ({ 
-    name: String, 
+    name: {
+        type: String,
+        // Validation: https://mongoosejs.com/docs/validation.html
+        required: true
+    }, 
     surname: String,
     age: Number
 });
@@ -26,4 +30,8 @@ const x = new Person({
 
 // https://mongoosejs.com/docs/api/model.html
 // Save more than one data 
-Person.insertMany([zehra, x]);
+// Person.insertMany([zehra, x]);
+
+let result = await Person.find({});
+result.forEach(function(person) {console.log(person.name)});
+mongoose.connection.close();
