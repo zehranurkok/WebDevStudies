@@ -15,6 +15,7 @@ const personSchema = new mongoose.Schema ({
     }, 
     surname: String,
     age: Number,
+    // Establishing Relationships and Embedding Documents
     favoriteMovie: movieSchema
 });
 
@@ -52,20 +53,23 @@ const movie2 = new Movie ({
 // a.save();
 
 // https://mongoosejs.com/docs/api/model.html
-// Save More than One Data 
-Movie.insertMany([movie1, movie2]);
 
-// Update Data
-await Person.updateOne({ name: "Zehra Nur"}, {favoriteMovie: movie1});
+// Update Many Data 
+// Movie.insertMany([movie1, movie2]);
 
-// Delete Data
+// Update One Data
+// await Person.updateOne({ name: "Zehra Nur"}, {favoriteMovie: { _id:'650ea6b438e4e4f30f3f1e19'}});
+
+// Delete Many Data
 // await Person.deleteMany({name: "aaaa", age: { $lte: 20 }});
 
-// Establishing Relationships and Embedding Documents
+// Delete One Date
+// await Movie.deleteOne({ _id: '650ea904ca4f4bcdbb9e6ade' });
 
-let resultPerson = await Person.find({ name: "Zehra Nur"}).exec();
+// let resultPerson = await Person.find({ name: "Zehra Nur" }).exec();
 // let resultMovie = await Movie.find({});
+let resultMovie = await Movie.find({ _id:'650ea6b438e4e4f30f3f1e19' });
 // resultPerson.forEach(function(person) {console.log(person.name)});
 // resultMovie.forEach(function(movie) {console.log(movie.name)});
-console.log(resultPerson);
+console.log(resultMovie);
 mongoose.connection.close();
