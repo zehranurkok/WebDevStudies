@@ -6,7 +6,7 @@ const personSchema = new mongoose.Schema ({
     name: {
         type: String,
         // Validation: https://mongoosejs.com/docs/validation.html
-        required: true
+        required: [true, "Why no name?"]
     }, 
     surname: String,
     age: Number
@@ -27,7 +27,7 @@ const Person = mongoose.model('Person', personSchema);
 // });
 
 const a = new Person({ 
-    name: 'aaaa',
+    // name: 'aaaa',
     surname: 'aaaa',
     age: 20
 });
