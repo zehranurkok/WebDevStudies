@@ -27,16 +27,22 @@ const Person = mongoose.model('Person', personSchema);
 // });
 
 const a = new Person({ 
-    // name: 'aaaa',
+    name: 'aaaa',
     surname: 'aaaa',
     age: 20
 });
 
-a.save();
+// a.save();
 
 // https://mongoosejs.com/docs/api/model.html
 // Save more than one data 
 // Person.insertMany([zehra, x]);
+
+// Update data
+// await Person.updateOne({ _id: "650e931da1cc98176cb25f3f"}, {name: 'Cihan'});
+
+// Delete data
+await Person.deleteMany({name: "aaaa", age: { $lte: 20 }});
 
 let result = await Person.find({});
 result.forEach(function(person) {console.log(person.name)});
